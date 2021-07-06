@@ -7,12 +7,9 @@ define("CONFIG",APP.'config'.DS);
 define("CONTROLLERS",APP.'controllers'.DS);
 define("MODELS",APP.'models'.DS);
 define("VIEWS",APP.'views'.DS);
-define("ROUTES",APP.'routes'.DS);
-define("INC",APP.'inc'.DS);
-define("LIBS",APP.'libs'.DS);
 define("UPLOADS",ROOT_PATH.'public'.DS.'uploads'.DS);
 
-$modules = [ROOT_PATH ,APP ,CORE,VIEWS ,ROUTES,CONTROLLERS ,MODELS ,CONFIG ,LIBS ,INC];
+$modules = [ROOT_PATH ,APP ,CORE,VIEWS,CONTROLLERS ,MODELS ,CONFIG];
 set_include_path(get_include_path(). PATH_SEPARATOR.implode(PATH_SEPARATOR,$modules));
 spl_autoload_register('spl_autoload',false);
 
