@@ -102,7 +102,6 @@ h1 span:nth-child(7) {
 	<span>o</span>
 	<span>r</span>
 	<span>k</span>
-	<?php echo $id ; ?>
 </h1>
 </CENTER>
 <!-- partial -->
