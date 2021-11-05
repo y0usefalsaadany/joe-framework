@@ -10,9 +10,9 @@ class DbConnection{
         define('PASS','');
         define('DBNAME','crud');
         $conn = mysqli_connect(HOST,USER,PASS,DBNAME);
-        if (!$connection){
+        if (!$conn){
             return View::load('error/errorInfo');
         }
-        return $connection;
+        return $conn;
     }*/
 }
